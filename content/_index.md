@@ -1,5 +1,6 @@
 ---
-title: "Homepage"
+title: "🏠 Halaman Utama"
+description: "2R2 (tu-la-tu)"
 date: 2022-03-14T01:03:58+08:00
 ---
 

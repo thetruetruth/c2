@@ -13,6 +13,8 @@ categories:
 tags:
 ---
 
+# Code of Ethics
+
 Being a globally oriented media service, we shall adopt the following code of ethics in pursuance of the vision and mission it has set for itself:
 
 1. Adhere to the journalistic values of honesty, courage, fairness, balance, independence, credibility and diversity, giving no priority to commercial or political over professional consideration.

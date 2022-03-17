@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 description: "Learn about our privacy policy and how we use cookies"
 date: 2022-03-12T12:26:12+08:00
-lastmod: 2022-03-12T12:26:12+08:00
+lastmod: 2022-03-17T12:26:12+08:00
 images:
 - "tile-wide.png"
 - "title.png"
@@ -23,9 +23,9 @@ Summary – This Notice
 
 This Notice explains how we may Process your Personal Data. This Notice may be amended or updated from time to time, so please check it regularly for updates.
 
-This Notice is issued by MyInformasi on behalf of itself, its subsidiaries and its affiliates (together, “MyInformasi”, “we”, “us” and “our”) and is addressed to individuals outside our organisation with whom we interact, including customers, visitors to our Sites, users of our Apps, and other users of our services (together, “you”). Defined terms used in this Notice are explained in Section (S) below.
+This Notice is issued by 2R2 on behalf of itself, its subsidiaries and its affiliates (together, “2R2”, “we”, “us” and “our”) and is addressed to individuals outside our organisation with whom we interact, including customers, visitors to our Sites, users of our Apps, and other users of our services (together, “you”). Defined terms used in this Notice are explained in Section (S) below.
 
-For the purposes of this Notice, MyInformasi is the Controller. Contact details are provided in Section (R) below.
+For the purposes of this Notice, 2R2 is the Controller. Contact details are provided in Section (R) below.
 
 This Notice may be amended or updated from time to time to reflect changes in our practices with respect to the Processing of Personal Data, or changes in applicable law. We encourage you to read this Notice carefully, and to regularly check this page to review any changes we might make in accordance with the terms of this Notice.
 
@@ -126,10 +126,10 @@ Summary – Disclosure of Personal Data to third parties
 
 We may disclose your Personal Data to: legal and regulatory authorities; our external advisors; our Processors; any party as necessary in connection with legal proceedings; any party as necessary for investigating, detecting or preventing criminal offences; any purchaser of our business; and any third party providers of advertising, plugins or content used on our Sites or our Apps.
 
-We may disclose your Personal Data to other entities within the MyInformasi group, for legitimate business purposes (including operating our Sites and our Apps, and providing services to you), in accordance with applicable law. In addition, we may disclose your Personal Data to: 
+We may disclose your Personal Data to other entities within the 2R2 group, for legitimate business purposes (including operating our Sites and our Apps, and providing services to you), in accordance with applicable law. In addition, we may disclose your Personal Data to: 
 
 - legal and regulatory authorities, upon request, or for the purposes of reporting any actual or suspected breach of applicable law or regulation;
-- accountants, auditors, lawyers and other outside professional advisors to MyInformasi, subject to binding contractual obligations of confidentiality;
+- accountants, auditors, lawyers and other outside professional advisors to 2R2, subject to binding contractual obligations of confidentiality;
 - third party Processors (such as payment services providers; shipping companies; etc.), located anywhere in the world, subject to the requirements noted below in this Section (H);
 - any relevant party, law enforcement agency or court, to the extent necessary for the establishment, exercise or defence of legal rights;
 - any relevant party for the purposes of prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including safeguarding against and the prevention of threats to public security;
@@ -167,11 +167,11 @@ Summary – International transfer of Personal Data
 
 We may transfer your Personal Data to recipients in other countries. Where we transfer Personal Data from the EEA to a recipient outside the EEA that is not in an Adequate Jurisdiction, we do so on the basis of Standard Contractual Clauses.
 
-Because of the international nature of our business, we may need to transfer your Personal Data within the MyInformasi group, and to third parties as noted in Section (H) above, in connection with the purposes set out in this Notice. For this reason, we may transfer your Personal Data to other countries that may have different laws and data protection compliance requirements to those that apply in the country in which you are located.
+Because of the international nature of our business, we may need to transfer your Personal Data within the 2R2 group, and to third parties as noted in Section (H) above, in connection with the purposes set out in this Notice. For this reason, we may transfer your Personal Data to other countries that may have different laws and data protection compliance requirements to those that apply in the country in which you are located.
 
 Where we transfer your Personal Data from the EEA to recipients located outside the EEA who are not in Adequate Jurisdictions, we do so on the basis of Standard Contractual Clauses. You may request a copy of our Standard Contractual Clauses using the contact details provided in Section (R) below.
 
-Please note that when you transfer any Personal Data directly to a MyInformasi entity established outside the EEA, we are not responsible for that transfer of your Personal Data. We will nevertheless Process your Personal Data, from the point at which we receive those data, in accordance with the provisions of this Privacy Policy.
+Please note that when you transfer any Personal Data directly to a 2R2 entity established outside the EEA, we are not responsible for that transfer of your Personal Data. We will nevertheless Process your Personal Data, from the point at which we receive those data, in accordance with the provisions of this Privacy Policy.
  
 ## (K) Data security                            
 
@@ -288,7 +288,7 @@ You may contact us by post or using our online form.
 If you have any comments, questions or concerns about any of the information in this Notice, or any other issues relating to the Processing of Personal Data carried out by us, or on our behalf, please contact:
 
 Legal Department
-MyInformasi
+2R2
 PO Box 23127
 Doha – Qatar
 

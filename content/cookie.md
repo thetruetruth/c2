@@ -2,7 +2,7 @@
 title: "Cookie Policy"
 description: "Learn about our privacy policy and how we use cookies"
 date: 2022-03-12T12:49:56+08:00
-lastmod: 2022-03-12T12:49:56+08:00
+lastmod: 2022-03-17T12:49:56+08:00
 images:
 - "tile-wide.png"
 - "title.png"
@@ -13,15 +13,15 @@ categories:
 tags:
 ---
 
-## Cookie Policy
+# Cookie Policy
 
-This policy is issued by MyInformasi.Org (“MyInformasi”, “we”, “us” and “our”).
+This policy is issued by 2R2 (“2R2”, “we”, “us” and “our”).
 
  
 **Websites to which this policy applies**
-This policy applies to websites at the following domains that are operated or controlled by MyInformasi.Org:
+This policy applies to websites at the following domains that are operated or controlled by 2R2:
 
-MyInformasi.Org
+2R2
 
 **What are cookies?**
 
@@ -83,7 +83,7 @@ We may use cookies to:
  
 **What types of cookies do we use?**
 
-An overview of the cookies used on Myinformasi websites can be accessed from 'Cookie Preferences' at the bottom of each website.
+An overview of the cookies used on 2R2 websites can be accessed from 'Cookie Preferences' at the bottom of each website.
 
 Please note that the processing of your personal data in connection with cookies, and for other purposes, is governed by our Privacy Policy.
 
@@ -102,4 +102,4 @@ More information on how to manage cookies is available from: [http://www.allabou
 
 In addition, you may opt-out from cookies by visiting the following sites and selecting which company cookies you would like to opt-out from: [http://www.aboutads.info/choices/#completed](http://www.aboutads.info/choices/#completed) and [http://www.youronlinechoices.com/](http://www.youronlinechoices.com/).
 
-Note: Myinformasi has no affiliation with, and is not responsible for, these third-party websites.
+Note: 2R2 has no affiliation with, and is not responsible for, these third-party websites.

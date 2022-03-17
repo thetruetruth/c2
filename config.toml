@@ -1,3 +1,6 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://2r2.netlify.app/'
+languageCode = 'ms'
+title = '2R2'
+
+disableHugoGeneratorInject = true
+
