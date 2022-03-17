@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <noscript><meta http-equiv="refresh" content="5; URL=https://browsehappy.com/"></noscript>
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/schema.html" .}}
+    {{ partial "headstylevendor.html" . }}
+    {{ partial "headstyleapp.html" . }}
+    <script defer src="/js/vendor.3iix.js"></script>
+    <script defer src="/js/bootstrap.24j4.js"></script>
+    <script defer src="/js/lang.27f1.js"></script>
+    {{ $mainJs := resources.Get "js/app.js" | js.Build "app.js" | minify | fingerprint "md5" }}
+    <script defer type="text/javascript" src="{{ $mainJs.RelPermalink }}" ></script>
+</head>
+<body>
+<noscript>This website requires javascript to be functional. Please enable your javascript or get latest compatible browser. You will be redirected to Browse Happy Website.</noscript>
+<div id="q-app"></div>
+<template id="c2">{{ block "main" . }}{{ end }}</template>
+</body>
+</html>
