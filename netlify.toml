@@ -15,3 +15,4 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "object-src 'none';base-uri 'self';script-src 'nonce-oYrfS15m4xZCHSTxc4XeSg' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:"
