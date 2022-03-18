@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=format-detection content="telephone=no">
     <meta name=msapplication-tap-highlight content=no>
+    <meta name="googlebot" content="notranslate">
     <noscript><meta http-equiv="refresh" content="5; URL=https://browsehappy.com/"></noscript>
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/icons/192.png">
@@ -24,11 +25,15 @@
     {{ template "_internal/schema.html" .}}
     {{ partial "headstylevendor.html" . }}
     {{ partial "headstyleapp.html" . }}
+    <link rel="preconnect" href="https://www.googletagmanager.com">
     <script defer src="/js/vendor.3iix.js" nonce="oYrfS15m4xZCHSTxc4XeSg"></script>
     <script defer src="/js/bootstrap.24j4.js" nonce="oYrfS15m4xZCHSTxc4XeSg"></script>
     <script defer src="/js/lang.27f1.js" nonce="oYrfS15m4xZCHSTxc4XeSg"></script>
     {{ $mainJs := resources.Get "js/app.js" | js.Build "app.js" | minify | fingerprint "md5" }}
     <script defer type="text/javascript" src="{{ $mainJs.RelPermalink }}" nonce="oYrfS15m4xZCHSTxc4XeSg"></script>
+    {{ if not .Site.IsServer }}
+        {{ partial "headanalytics.html" . }}
+    {{ end }}
 </head>
 <body>
 <noscript>This website requires javascript to be functional. Please enable your javascript or get latest compatible browser. You will be redirected to Browse Happy Website.</noscript>

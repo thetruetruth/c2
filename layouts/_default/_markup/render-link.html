@@ -1,0 +1,23 @@
+{{- $linkurl := .Destination }}
+{{- $relval := ""}}
+{{- $targetval := ""}}
+{{- $classval := "" }}
+{{- if strings.HasPrefix $linkurl "http" }}
+    {{- $targetval = printf "%s %s"  $targetval "_blank" }}
+    {{- $relval = printf "%s %s" $relval "noopener" }}
+    {{- $classval = printf "%s %s" $classval "external" }}
+{{- end -}}
+{{- if strings.HasPrefix $linkurl "/" }}
+    {{- $classval = printf "%s %s" $classval "internal" }}
+{{- end -}}
+{{- if strings.HasSuffix $linkurl "#?" }} 
+    {{- $relval = printf "%s %s" $relval "nofollow" }}
+    {{- $urlparts := split $linkurl "#" -}}
+    {{- $linkurl = index $urlparts 0}}
+{{- end -}}
+<a href="{{ $linkurl | safeURL }}"
+    {{- with .Title}} title="{{ trim . " " }}"{{ end -}}
+    {{- with $relval}} rel="{{ trim . " " }}"{{ end -}}
+    {{- with $targetval}} target="{{ trim . " " }}"{{ end -}}
+    {{- with $classval}} class="{{ trim . " " }}"{{ end -}}
+>{{ .Text | safeHTML }}{{ if strings.HasPrefix $linkurl "http" }}<span class="q-icon" aria-hidden="true" role="presentation"><svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"></path></svg></span>{{ end }}</a>

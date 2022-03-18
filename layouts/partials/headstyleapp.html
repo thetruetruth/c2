@@ -1,7 +1,13 @@
 <style>
-    h1,h2,h3,h4,h5,h6{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin-top: 0;
     }
+
     .header {
         background-color: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(12px);
@@ -11,9 +17,11 @@
         background-color: rgba(0, 0, 0, 0.85);
         backdrop-filter: blur(12px);
     }
-    .q-page{
+
+    .q-page {
         padding-bottom: 76px;
     }
+
     .q-page p,
     .q-page ul,
     .q-page ol {
@@ -37,10 +45,50 @@
             padding: 0 8px;
         }
     }
-    .footer-link{
+
+    .footer-link {
         color: inherit;
         font-size: .75rem;
         font-weight: 500;
         text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    p{
+        word-break: break-all;
+    }
+
+    a.external,a.internal {
+        border-bottom: 1px dotted;
+        color: #00b4ff;
+        font-weight: 500;
+        outline: 0;
+        text-decoration: none;
+        transition: opacity .2s;
+        white-space: nowrap;
+        fill: #00b4ff;
+    }
+    .external .q-icon{
+        margin-left:4px;
+        margin-top:-3px;
+    }
+    .text-shadow {
+        color: #fff;
+        text-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
     }
 </style>
