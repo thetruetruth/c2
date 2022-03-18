@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,16 @@
     <meta name=format-detection content="telephone=no">
     <meta name=msapplication-tap-highlight content=no>
     <noscript><meta http-equiv="refresh" content="5; URL=https://browsehappy.com/"></noscript>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/icons/192.png">
+    <meta name="theme-color" content="#eee">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/192.png">
+    <link rel="icon" type="image/png" sizes="76x76" href="/icons/76x76.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/16.png">
+    <link rel="icon" type=image/ico href="/favicon.ico">
+    <link rel="mask-icon" href="/icons/icon.svg" color="#00B4FF">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ template "_internal/opengraph.html" . }}

@@ -97,14 +97,14 @@ ready(function () {
             <div class="absolute-top header">
             <q-toolbar class="q-px-none">
                 <q-btn flat stretch no-wrap no-caps class="gt-sm full-width" href="/" aria-label="Kembali Halaman Utama">
-                    <span style="font-size:20px;line-height:1" class="text-weight-bold">2R2<br><span class="text-caption">🇲🇾 Malaysia 🇸🇬 Singapore 🇧🇳 Brunei 🇮🇩 Indonesia</span></span>
+                    <span style="font-size:20px;line-height:1" class="text-weight-bold">2r2<br><span class="text-caption">🇲🇾 Malaysia 🇸🇬 Singapore 🇧🇳 Brunei 🇮🇩 Indonesia</span></span>
                 </q-btn>
                 <div class="lt-md font-weight-bolder q-ml-md" style="font-size:24px">
                 <q-toolbar-title class="text-weight-bold">
                 <q-avatar size="32px">
                     <img src="/icons/76.png" width="32" height="32" alt="">
                 </q-avatar>
-                2R2 🇲🇾 🇸🇬 🇧🇳 🇮🇩 
+                2r2 🇲🇾 🇸🇬 🇧🇳 🇮🇩 
                 </q-toolbar-title>
                 </div>
                 <q-space/>
