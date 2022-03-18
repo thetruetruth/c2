@@ -46,7 +46,7 @@ ready(function () {
             </q-btn>
             <q-input outlined rounded class="full-width" dense v-model="search" placeholder="Carian" readonly>
                 <template v-slot:append>
-                <q-avatar v-if="search === ''" aria-label="Carian">
+                <q-avatar v-if="search === ''">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
                 </q-avatar>
                 <q-icon v-else class="cursor-pointer" @click="search = ''" aria-label="clear">
@@ -65,7 +65,7 @@ ready(function () {
           </q-toolbar>
         </q-header>
     
-        <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered :width="$q.platform.is.desktop ? '318' : '300'">
+        <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered :width="$q.platform.is.desktop ? '318' : '300'"  no-swipe-backdrop no-swipe-close no-swipe-open>
             <q-scroll-area class="full-width" style="height:calc(100% - 50px);margin-top:50px">
                 <q-list class="text-grey-8">
                     <q-separator inset class="q-my-sm" />
@@ -116,7 +116,10 @@ ready(function () {
             </div>
         </q-drawer>
     
-        <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered :width="392">
+        <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered :width="392" no-swipe-backdrop no-swipe-close no-swipe-open>
+            <q-scroll-area class="fit">
+                <RightContent/>
+            <q-scroll-area>
         </q-drawer>
     
         <q-page-container>
@@ -127,7 +130,10 @@ ready(function () {
         `
     })
     app.component('Content',{
-        template:'#c2'
+        template:'#tulatu'
+    })
+    app.component('RightContent',{
+        template:'#tulatukan'
     })
     app.use(Quasar)
     Quasar.lang.set(Quasar.lang.ms)

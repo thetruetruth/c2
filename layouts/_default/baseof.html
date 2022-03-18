@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=format-detection content="telephone=no">
+    <meta name=msapplication-tap-highlight content=no>
     <noscript><meta http-equiv="refresh" content="5; URL=https://browsehappy.com/"></noscript>
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
@@ -21,6 +23,7 @@
 <body>
 <noscript>This website requires javascript to be functional. Please enable your javascript or get latest compatible browser. You will be redirected to Browse Happy Website.</noscript>
 <div id="q-app"></div>
-<template id="c2">{{ block "main" . }}{{ end }}</template>
+<template id="tulatu">{{ block "main" . }}{{ end }}</template>
+<template id="tulatukan">{{ block "sideleft" . }}{{ end }}</template>
 </body>
 </html>
