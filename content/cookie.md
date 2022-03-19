@@ -7,7 +7,7 @@ images:
 - "tile-wide.png"
 - "title.png"
 authors:
-- "Admin"
+- "2r2"
 categories:
 - 
 tags:

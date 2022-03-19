@@ -15,6 +15,7 @@ ready(function () {
             const leftDrawerOpen = Vue.ref(false)
             const rightDrawerOpen = Vue.ref(false)
             const search = Vue.ref('')
+            const tab = Vue.ref('mails')
             return {
                 leftDrawerOpen,rightDrawerOpen,
                 toggleLeftDrawer () {
@@ -23,7 +24,8 @@ ready(function () {
                 toggleRightDrawer () {
                     rightDrawerOpen.value = !rightDrawerOpen.value
                 },
-                search
+                search,
+                tab
             }
         },
         methods:{
@@ -130,6 +132,11 @@ ready(function () {
         `
     })
     app.component('Content',{
+        setup(){
+            return {
+                tab: Vue.ref('mails')
+            }
+        },
         template:'#tulatu'
     })
     app.component('RightContent',{
@@ -138,4 +145,9 @@ ready(function () {
     app.use(Quasar)
     Quasar.lang.set(Quasar.lang.ms)
     app.mount('#q-app')
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());  
+    gtag('config', 'G-4W81EYMJLL');
 });

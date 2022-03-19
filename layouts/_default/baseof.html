@@ -11,6 +11,7 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/icons/192.png">
     <meta name="theme-color" content="#eee">
+    <meta name="apple-mobile-web-app-status-bar" content="#eee">
     <link rel="manifest" href="/manifest.webmanifest">
     <link rel="icon" type="image/png" sizes="192x192" href="/icons/192.png">
     <link rel="icon" type="image/png" sizes="76x76" href="/icons/76x76.png">
@@ -31,9 +32,7 @@
     <script defer src="/js/lang.27f1.js" nonce="oYrfS15m4xZCHSTxc4XeSg"></script>
     {{ $mainJs := resources.Get "js/app.js" | js.Build "app.js" | minify | fingerprint "md5" }}
     <script defer type="text/javascript" src="{{ $mainJs.RelPermalink }}" nonce="oYrfS15m4xZCHSTxc4XeSg"></script>
-    {{ if not .Site.IsServer }}
-        {{ partial "headanalytics.html" . }}
-    {{ end }}
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-4W81EYMJLL" nonce="oYrfS15m4xZCHSTxc4XeSg"></script>
 </head>
 <body>
 <noscript>This website requires javascript to be functional. Please enable your javascript or get latest compatible browser. You will be redirected to Browse Happy Website.</noscript>
