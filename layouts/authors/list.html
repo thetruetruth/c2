@@ -97,12 +97,44 @@
 <h2 class="sr-only">About Author</h2>
 {{ .Content }}
 
-<h2>Artikel</h2>
-{{ range (where .Site.Pages "Section" "artikel") }}
-   {{ range .Pages }}
-      <a href="{{.Permalink}}" class="block">{{ .Title }}</a>
-   {{ end }}
-{{ end }}
+<h2 class="sr-only">Artikel</h2>
+<div data-mode="aspect-fit">
+    <q-separator ></q-separator>
+    <q-list class="no-padding">
+        {{ range (where .Site.Pages "Section" "artikel") }}
+        {{ range .Pages }}
+        <q-item href="{{.Permalink}}">
+            {{ with .Params.featuredImg}}
+            <q-item-section top avatar>
+                <q-avatar square :size="$q.screen.lt.md ? '40px' : '76px'">
+                    <q-img :ratio="1" src="{{ . | absURL }}" alt="{{ $.Title }}" no-spinner >
+                        <template v-slot:loading>
+                            <q-skeleton class="fit" square></q-skeleton>
+                        </template>
+                        <template v-slot:error>
+                            <div class="absolute-full flex flex-center bg-negative text-white">
+                                Err
+                            </div>
+                        </template>
+                    </q-img>
+                </q-avatar>
+            </q-item-section>
+            {{ end }}
+      
+            <q-item-section top>
+              <q-item-label>{{ .Title }}</q-item-label>
+              <q-item-label caption>{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}</q-item-label>
+            </q-item-section>
+      
+            <q-item-section side top class="gt-sm">
+              <q-item-label caption>{{ .Lastmod.Format "02 Jan 2006" }}</q-item-label>
+            </q-item-section>
+          </q-item>
+        <q-separator ></q-separator>
+        {{ end }}
+        {{ end }}
+      </q-list>
+</div>
 </article>
 
 {{ end }}

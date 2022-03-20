@@ -1,8 +1,6 @@
 {{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
 {{ define "main" }}
-{{ range (where .Site.Pages "Section" "artikel") }}
-   {{ range .Pages }}
-      {{ .Title }}
-   {{ end }}
+{{ range .Pages }}
+      {{ .Params.name }}
 {{ end }}
 {{ end }}
