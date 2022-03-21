@@ -1,6 +1,22 @@
 {{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
 {{ define "main" }}
+<div class="fit row wrap justify-start items-start content-start">
+
 {{ range .Pages }}
-      {{ .Params.name }}
+      <div class="col-6 col-md-6 q-pa-xs">
+            <q-item href="{{.Permalink}}" class="shadow-2">
+                  <q-item-section avatar>
+                        <q-avatar>
+                              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+                        </q-avatar>
+                  </q-item-section>
+          
+                  <q-item-section>
+                        <q-item-label>{{ .Params.name }}</q-item-label>
+                  </q-item-section>
+            </q-item>
+      </div>
 {{ end }}
+</div>
+
 {{ end }}

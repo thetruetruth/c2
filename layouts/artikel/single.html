@@ -2,11 +2,9 @@
 {{ define "main" }}
 <article>
     <header>
-        {{ with .Params.showImg }}
-        {{ if eq . true }}
-        {{ with $.Params.images}}
+        {{ with .Params.featuredImg }}
         <figure data-mode="aspect-fit">
-            <q-img loading="eager" :ratio="16/9" src="{{ index . 0 | absURL }}" alt="{{ $.Title }}" no-spinner >
+            <q-img loading="eager" :ratio="16/9" src="{{ . | replaceRE "https://" "https://i0.wp.com/" }}?w=800" alt="{{ $.Title }}" no-spinner >
                 <template v-slot:loading>
                     <q-skeleton class="fit" square></q-skeleton>
                 </template>
@@ -18,8 +16,6 @@
             </q-img>
         </figure>
         {{ end }}
-        {{ end }}
-        {{ end }}
         <h1>{{ .Title }}</h1>
         {{ with .Params.kicker }}<h2 class="op-kicker text-body1 text-h5">{{. | markdownify}}</h2>{{ end }}
         {{ range .Params.authors }}
@@ -27,7 +23,9 @@
             <q-item class="q-px-none">
                 <q-item-section avatar top>
                     <q-avatar color="teal" text-color="white" size="50px">
-                        <a href="{{ .Permalink }}" aria-label="author's link"><img src="{{ .Params.avatar }}" alt="{{.Params.name }} avatar"></a>
+                        <a href="{{ .Permalink }}" aria-label="author's link">
+                            <img src="{{ .Params.avatar | replaceRE "https://" "https://i0.wp.com/"}}?w=50" alt="{{.Params.name }} avatar" width="50" height="50">
+                        </a>
                     </q-avatar>
                 </q-item-section>
                 <q-item-section>

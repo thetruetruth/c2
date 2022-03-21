@@ -1,6 +1,6 @@
 ---
 name: "2r2"
-avatar: "/icons/512.png"
+avatar: "https://2r2.netlify.app/icons/512.png"
 background: "https://2r2.netlify.app/imgbb/t8R7FRz/255471924.jpg"
 role: Administration
 verify: true

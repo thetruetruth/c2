@@ -1,0 +1,46 @@
+{{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+{{ .Content }}
+
+<h1 class="sr-only">{{ .Title }}</h1>
+<div data-mode="aspect-fit">
+    <q-separator ></q-separator>
+<q-list class="no-padding">
+    {{ range .Pages }}
+    <q-item href="{{.Permalink}}">
+        <q-item-section top>
+            <q-item-label caption :lines="1" >{{ range .Params.authors }}{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}<q-img src="{{.Params.avatar | replaceRE "https://" "https://i0.wp.com/"}}?w=32" width="16px" height="16px" alt="" no-spinner class="q-mr-xs" style="vertical-align: bottom;">
+                <template v-slot:loading>
+                    <q-skeleton class="fit" square></q-skeleton>
+                </template>
+                <template v-slot:error>
+                    <div class="absolute-full flex flex-center bg-negative text-white">
+                        Err
+                    </div>
+                </template></q-img><span class="q-mr-xs">{{.Params.name }}</span>{{end}}{{end}}</q-item-label>
+            <q-item-label :lines="3">{{ .Title }}</q-item-label>
+            <q-item-label caption class="q-mb-auto"><span class="sr-only">{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}</span></q-item-label>
+            <q-item-label :lines="1" caption><time class="op-modified" dateTime="{{.Lastmod.Format "2006-01-02T15:04:05Z0700"}}">{{ .Lastmod.Format "02 Jan 2006" }}</time></q-item-label>
+        </q-item-section>
+        {{ with .Params.featuredImg}}
+        <q-item-section top avatar>
+            <q-avatar square :size="$q.screen.lt.md ? '40px' : '76px'">
+                <q-img :ratio="1" src="{{ . | replaceRE "https://" "https://i0.wp.com/" }}?crop=50,50,150px,150px" alt="{{ $.Title }}" no-spinner >
+                    <template v-slot:loading>
+                        <q-skeleton class="fit" square></q-skeleton>
+                    </template>
+                    <template v-slot:error>
+                        <div class="absolute-full flex flex-center bg-negative text-white">
+                            Err
+                        </div>
+                    </template>
+                </q-img>
+            </q-avatar>
+        </q-item-section>
+        {{ end }}
+      </q-item>
+    <q-separator ></q-separator>
+    {{ end }}
+</q-list>
+</div>
+{{ end }}

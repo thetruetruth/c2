@@ -3,7 +3,7 @@
 <article>
 <header>
     <figure data-mode="aspect-fit">
-        <q-img loading="eager" :ratio="3/1" src="{{ .Params.background }}" alt="header photo" no-spinner>
+        <q-img loading="eager" :ratio="3/1" src="{{ .Params.background | replaceRE "https://" "https://i0.wp.com/"}}" alt="header photo" no-spinner>
             <template v-slot:loading>
                 <q-skeleton class="fit" square></q-skeleton>
               </template>
@@ -17,7 +17,7 @@
                     <q-item class="q-pa-none">
                         <q-item-section top avatar>
                             <q-avatar size="70px">
-                                <img src="/icons/76.png">
+                                <img src="{{ .Params.avatar | replaceRE "https://" "https://i0.wp.com/"}}?w=70" width="70" height="70" alt="avatar {{.Params.name}}">
                             </q-avatar>
                         </q-item-section>
                         <q-item-section top>
@@ -107,7 +107,7 @@
             {{ with .Params.featuredImg}}
             <q-item-section top avatar>
                 <q-avatar square :size="$q.screen.lt.md ? '40px' : '76px'">
-                    <q-img :ratio="1" src="{{ . | absURL }}" alt="{{ $.Title }}" no-spinner >
+                    <q-img :ratio="1" src="{{ . | replaceRE "https://" "https://i0.wp.com/" }}?crop=50,50,150px,150px" alt="{{ $.Title }}" no-spinner >
                         <template v-slot:loading>
                             <q-skeleton class="fit" square></q-skeleton>
                         </template>

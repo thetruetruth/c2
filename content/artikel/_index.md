@@ -1,4 +1,4 @@
 ---
-title: 📰 Senarai Artikel
+title: 📄 Senarai Artikel
 description:
 ---
