@@ -7,7 +7,10 @@
             <q-item href="{{.Permalink}}" class="shadow-2">
                   <q-item-section avatar>
                         <q-avatar>
-                              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+                              <q-img src="{{ .Params.avatar | replaceRE "https://" "https://i0.wp.com/"}}?w=40" width="40px" height="40px" no-spinner alt="">
+                                    <template v-slot:loading><q-skeleton class="fit" square></q-skeleton></template>
+                                    <template v-slot:error><div class="absolute-full flex flex-center bg-negative text-white">Err</div></template>
+                              </q-img>
                         </q-avatar>
                   </q-item-section>
           

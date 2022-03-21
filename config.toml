@@ -4,6 +4,9 @@ title = '2r2'
 googleAnalytics = 'G-4W81EYMJLL'
 disableHugoGeneratorInject = true
 
+[markup.goldmark.renderer]
+  unsafe = true
+  
 [taxonomies]
   tag = "tags"
   category = "categories"

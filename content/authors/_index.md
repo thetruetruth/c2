@@ -1,4 +1,4 @@
 ---
 title: 👥 Senarai Penulis
-description:
+description: Senarai penulis di 2r2
 ---
