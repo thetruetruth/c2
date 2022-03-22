@@ -7,7 +7,6 @@ authors:
 - Abdullah Muhammad Basmeih
 images:
 videos:
-
 ---
 
 # Surah Maryam
@@ -115,4 +114,4 @@ Surah sebelum Surah Maryam: [Surah Al Kahf](/al-quran/surah-al-kahf-terjemahan-b
 
 Surah selepas Surah Maryam: [Surah Taha](/al-quran/surah-taha-terjemahan-bahasa-melayu/)
 
-Text disediakan oleh Abdullah Muhammad Basmeih
+Text disediakan oleh Abdullah Muhammad Basmeih 
