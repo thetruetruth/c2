@@ -90,6 +90,6 @@ videos:
 
 Surah sebelum Surah Al A'raf: [Surah An'am](/al-quran/surah-al-anam-terjemahan-bahasa-melayu/)
 
-Surah selepas Surah Al A'raf: [Surah Al Anfal](/al-quran/surah-al-anfal-terjemahan-bahasa-melayu/)
+Surah selepas Surah Al A'raf: [Surah At Tawbah](/al-quran/surah-at-tawbah-terjemahan-bahasa-melayu/)
 
 Text disediakan oleh Abdullah Muhammad Basmeih
