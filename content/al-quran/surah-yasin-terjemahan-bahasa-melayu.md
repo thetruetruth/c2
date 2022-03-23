@@ -96,8 +96,8 @@ videos:
 <p class='atq' id="82">Sesungguhnya keadaan kekuasaanNya apabila Ia menghendaki adanya sesuatu, hanyalah Ia berfirman kepada (hakikat) benda itu: " Jadilah engkau! ". Maka ia terus menjadi.</p>
 <p class='atq' id="83">Oleh itu akuilah kesucian Allah (dengan mengucap: Subhaanallah!) - Tuhan yang memiliki dan menguasai tiap-tiap sesuatu, dan kepadaNyalah kamu semua dikembalikan.</p>
 
-Surah sebelum Surah Faatir: [Surah Saba](/al-quran/surah-saba-terjemahan-bahasa-melayu/)
+Surah sebelum Surah Yasin: [Surah Faatir](/al-quran/surah-faatir-terjemahan-bahasa-melayu/)
 
-Surah selepas Surah Faatir: [Surah Yasin](/al-quran/surah-yasin-terjemahan-bahasa-melayu/)
+Surah selepas Surah Yasin: [Surah As-Saffat](/al-quran/surah-as-saffat-terjemahan-bahasa-melayu/)
 
 Terjemahan oleh [Abdullah Muhammad Basmeih](/authors/abdullah-muhammad-basmeih/)
