@@ -75,8 +75,8 @@ videos:
 <p class='atq' id="61">Sedang kamu adalah orang-orang yang sombong angkuh, lagi yang melalaikan kewajipan?</p>
 <p class='atq' id="62">Oleh yang demikian, hendaklah kamu sujud kepada Allah (yang telah menurunkan Al-Quran itu), dan beribadatlah kamu kepadaNya (dengan sepenuh-penuh tauhid).</p>
 
-Surah sebelum Surah At Toor: [Surah Ad Dhariyat](/al-quran/surah-ad-dhariyat-terjemahan-bahasa-melayu/)
+Surah sebelum Surah An Najm: [Surah At Tur](/al-quran/surah-at-tur-terjemahan-bahasa-melayu/)
 
-
+Surah selepas Surah An Najm: [Surah Al Qamar](/al-quran/surah-al-qamar-terjemahan-bahasa-melayu/)
 
 Terjemahan oleh [Abdullah Muhammad Basmeih](/authors/abdullah-muhammad-basmeih/)

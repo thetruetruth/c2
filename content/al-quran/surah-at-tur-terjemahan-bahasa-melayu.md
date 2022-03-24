@@ -62,8 +62,8 @@ videos:
 <p class='atq' id="48">Dan (dengan yang demikian) bersabarlah (wahai Muhammad) menerima hukum Tuhanmu (memberi tempoh kepada mereka), kerana sesungguhnya engkau tetap terselamat dalam pemuliharaan serta pengawasan Kami; dan bertasbihlah dengan memuji Tuhanmu semasa engkau bangun.</p>
 <p class='atq' id="49">Dan juga hendaklah engkau bertasbih kepadaNya pada waktu malam, dan ketika bintang-bintang tenggelam (pada waktu subuh).</p>
 
-Surah sebelum Surah At Toor: [Surah Ad Dhariyat](/al-quran/surah-ad-dhariyat-terjemahan-bahasa-melayu/)
+Surah sebelum Surah At Tur: [Surah Ad Dhariyat](/al-quran/surah-ad-dhariyat-terjemahan-bahasa-melayu/)
 
-Surah selepas Surah At Toor: [Surah An Najm](/al-quran/surah-an-najm-terjemahan-bahasa-melayu/)
+Surah selepas Surah At Tur: [Surah An Najm](/al-quran/surah-an-najm-terjemahan-bahasa-melayu/)
 
 Terjemahan oleh [Abdullah Muhammad Basmeih](/authors/abdullah-muhammad-basmeih/)

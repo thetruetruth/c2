@@ -4,9 +4,8 @@ description:
 date: {{ .Date }}
 lastmod: {{ .Date }}
 authors:
-- 2r2
+- Abdullah Muhammad Basmeih
 images:
 videos:
-
 ---
 
