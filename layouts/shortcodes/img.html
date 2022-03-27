@@ -1,0 +1,18 @@
+{{ if .IsNamedParams }}
+<q-intersection once  id="{{ .Get "id" }}">
+<figure data-mode="aspect-fit">
+    <q-responsive :ratio="{{ .Get "width" }}/{{ .Get "height" }}">
+            <q-img loading="lazy" :ratio="{{ .Get "width" }}/{{ .Get "height" }}" src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" no-spinner >
+                <template v-slot:loading>
+                    <q-skeleton class="fit" square></q-skeleton>
+                </template>
+                <template v-slot:error>
+                    <div class="absolute-full flex flex-center bg-negative text-white">
+                        Cannot load image
+                    </div>
+                </template>
+            </q-img>
+    </q-responsive>
+</figure>
+</q-intersection>
+{{ end }}

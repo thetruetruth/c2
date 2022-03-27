@@ -2,9 +2,9 @@
 {{ define "main" }}
 {{ .Content }}
 <h1 class="sr-only">{{ .Title }}</h1>
+<ul>
 {{ range .Pages }}
-<li>
-    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-</li>
+<li><a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a></li>
 {{ end }}
+</ul>
 {{ end }}
